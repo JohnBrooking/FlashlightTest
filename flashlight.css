@@ -1,0 +1,15 @@
+/* FlashlightTest Styles */
+
+header {
+   background-color: blue;
+   color: white;
+   font-family: sans-serif;
+}
+
+#LightOff {
+   display: block;
+}
+
+#LightOn {
+   display: none;
+}
