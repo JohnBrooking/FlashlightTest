@@ -8,21 +8,13 @@
       
       <link rel="stylesheet" href="styles/flashlight.css">
       
-      <!--
-         Plain javascript version: No jQuery, no Angular, no OO, no callbacks.
-         Just plain traditional fuctions called by traditional HTML event tags.
-         
-         This is so we can test the light functionality itself without having to
-         test everything else at the same time.
-         
-      -->
-      <script src="scripts/flashlight_simple.js"></script>
-      
    </head>
    
-   <body onunload='setLight(false)'> <!-- Turn the light off when we exit -->
+   <body onload='checkAvail()' onunload='setLight(false)'> <!-- Turn the light off when we exit -->
    
-      <header>John's Flashlight Test App</header>
+      <header>John's Flashlight Test App v0.2</header>
+      
+      <section id='ErrorMsg'></section>
       
       <section id='LightOff'>
          <p>Light is off.</p>
@@ -35,6 +27,16 @@
       </section>
       
       <script src="cordova.js"></script>
+      
+      <!--
+         Plain javascript version: No jQuery, no Angular, no OO, no callbacks.
+         Just plain traditional fuctions called by traditional HTML event tags.
+         
+         This is so we can test the light functionality itself without having to
+         test everything else at the same time.
+         
+      -->
+      <script src="scripts/flashlight.js"></script>
       
    </body>
 
