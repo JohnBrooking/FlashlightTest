@@ -13,3 +13,8 @@ header {
 #LightOn {
    display: none;
 }
+
+#ErrorMsg {
+   color: red;
+   display: none;
+}
